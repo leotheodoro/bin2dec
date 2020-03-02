@@ -1,24 +1,15 @@
-# bin2dec
+# Conversão de binário para decimal
+Binário é o sistema de números em que todos os computadores são baseados. É de muita importância que os desenvolvedores saibam como os números binários (base 2) funcionam. o propósito do bin2dec é calcular e entender como funcionam os cálculos binários.
 
-## Project setup
-```
-npm install
-```
+Bin2Dec permite o usuário digitar uma string de até no máximo 8 dígitos binários, e na sequência mostrar o valor em decimal.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Nesse desafio existem as seguintes regras:
+- É proibido arrays para armazenar os 8 dígitos binários.
+- Você deve usar uma única função matemática para realizar o cálculo.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## O que precisa ser feito
+[] Usuário precisa digitar os 8 dígitos binários em um campo de preenchimento.
+[] Usuário precisa ser notificado se ele digitar outro caractere que não seja 0 e 1.
+[] Usuário deve ver o resultado em um campo contendo o número em decimal equivalente ao número binário que foi digitado.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[] Usuário pode inserir vários números binários.
