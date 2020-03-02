@@ -10,6 +10,6 @@ Nesse desafio existem as seguintes regras:
 ## O que precisa ser feito
 - [x] Usuário precisa digitar os 8 dígitos binários em um campo de preenchimento.
 - [x] Usuário precisa ser notificado se ele digitar outro caractere que não seja 0 e 1.
-- [ ] Usuário deve ver o resultado em um campo contendo o número em decimal equivalente ao número binário que foi digitado.
+- [x] Usuário deve ver o resultado em um campo contendo o número em decimal equivalente ao número binário que foi digitado.
 
 - [ ] Usuário pode inserir vários números binários.
