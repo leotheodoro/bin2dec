@@ -28,12 +28,18 @@ export default {
     return {
       error: false,
       binary: '',
-      decimal: '',
+      decimal: 0,
     }
   },
   methods: {
     convert() {
-      console.log(this.binary);
+      this.decimal = 0;
+      for(let i = this.binary.length-1; i >= 0; i--) {
+        this.decimal += parseInt(this.binary[i]) * Math.pow(2, this.binary.length-1-i);
+        console.log(`${parseInt(this.binary[i])} * ${Math.pow(2, this.binary.length-1-i)}`);
+      }
+
+      this.binary = '';
     },
     validate() {
       if(this.binary.length === 8) {
@@ -41,9 +47,9 @@ export default {
       }
 
       let key = window.event.key;
-      (key !== '0' && key !== '1' && key !== 'Backspace' && key !== 'Tab') ? this.error = true : this.error = false;
+      (key !== '0' && key !== '1' && key !== 'Backspace' && key !== 'Tab' && key !== 'Enter') ? this.error = true : this.error = false;
 
-      if(key === 'Backspace') {
+      if(key === 'Backspace' ) {
         const keyword = this.binary.substr(this.binary.length-1, 1);
         (keyword !== '0' && keyword !== '1' && this.binary.length > 0) ? this.error = true : this.error = false;
       }
